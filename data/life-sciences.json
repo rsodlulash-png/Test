@@ -1,0 +1,222 @@
+
+[
+  {
+    "id": "ls-g10-cells",
+    "grade": 10,
+    "subject": "life-sciences",
+    "title": "Introduction to Cells",
+    "topic": "Cell Biology",
+    "language": "en",
+    "duration": 10,
+    "content": {
+      "intro": "Living organisms are made of cells. A cell is the basic structural and functional unit of life.",
+      "sections": [
+        {
+          "heading": "What is a cell?",
+          "text": "Cells are the smallest units that can carry out the processes necessary for life. Some organisms consist of one cell, while others consist of many cells."
+        },
+        {
+          "heading": "Animal and plant cells",
+          "text": "Both plant and animal cells have a cell membrane, cytoplasm and a nucleus. Plant cells also typically have a cell wall, a large permanent vacuole and chloroplasts in photosynthetic cells."
+        },
+        {
+          "heading": "Functions of cell structures",
+          "text": "The nucleus contains genetic material and helps control cell activities. The cell membrane regulates the movement of substances into and out of the cell. Mitochondria release energy through cellular respiration."
+        }
+      ],
+      "example": "A leaf cell may contain chloroplasts that absorb light energy for photosynthesis.",
+      "summary": "Cells are the basic units of life. Cell structures have specialised functions, and plant cells have some structures that animal cells do not."
+    },
+    "translations": {
+      "xh": {
+        "title": "Intshayelelo kwiiSeli",
+        "intro": "Izinto eziphilayo zenziwe ziiseli. Iseli yeyona yunithi isisiseko yokwakheka nokusebenza kobomi.",
+        "summary": "Iiseli zezona yunithi zisisiseko zobomi. Amalungu eseli anemisebenzi eyahlukeneyo."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ls-g10-q1",
+        "question": "What is the basic structural and functional unit of life?",
+        "options": [
+          "An organ",
+          "A tissue",
+          "A cell",
+          "An organ system"
+        ],
+        "answerIndex": 2,
+        "explanation": "A cell is the basic structural and functional unit of life."
+      },
+      {
+        "id": "ls-g10-q2",
+        "question": "Which structure is typically found in plant cells but not animal cells?",
+        "options": [
+          "Cell membrane",
+          "Cytoplasm",
+          "Nucleus",
+          "Cell wall"
+        ],
+        "answerIndex": 3,
+        "explanation": "Plant cells have a cell wall outside the cell membrane. Animal cells do not have a cell wall."
+      },
+      {
+        "id": "ls-g10-q3",
+        "question": "Which organelle releases energy through cellular respiration?",
+        "options": [
+          "Mitochondrion",
+          "Cell wall",
+          "Vacuole",
+          "Chloroplast"
+        ],
+        "answerIndex": 0,
+        "explanation": "Mitochondria are the main sites of aerobic cellular respiration."
+      }
+    ]
+  },
+  {
+    "id": "ls-g11-photosynthesis",
+    "grade": 11,
+    "subject": "life-sciences",
+    "title": "Photosynthesis",
+    "topic": "Plant Physiology",
+    "language": "en",
+    "duration": 12,
+    "content": {
+      "intro": "Photosynthesis is the process through which plants use light energy to make glucose from carbon dioxide and water.",
+      "sections": [
+        {
+          "heading": "Where does photosynthesis happen?",
+          "text": "Photosynthesis takes place in chloroplasts. Chlorophyll, a green pigment, absorbs light energy."
+        },
+        {
+          "heading": "What does a plant need?",
+          "text": "The main requirements are light energy, water and carbon dioxide. Water is absorbed by roots, while carbon dioxide enters leaves through small openings called stomata."
+        },
+        {
+          "heading": "The photosynthesis equation",
+          "text": "Carbon dioxide and water are used to produce glucose and oxygen when light energy is available. The balanced equation is 6CO2 + 6H2O → C6H12O6 + 6O2, in the presence of light and chlorophyll."
+        }
+      ],
+      "example": "A plant kept in darkness for a long period cannot sustain normal photosynthesis because it lacks the light energy needed for the process.",
+      "summary": "Photosynthesis converts light energy into chemical energy stored in glucose. Oxygen is released as a by-product."
+    },
+    "translations": {
+      "xh": {
+        "title": "Ifotosinthesisi",
+        "intro": "Ifotosinthesisi yinkqubo apho izityalo zisebenzisa amandla okukhanya ukwenza iswekile ngekharbon dayoksayidi namanzi.",
+        "summary": "Ifotosinthesisi iguqula amandla okukhanya abe ngamandla ekhemikhali agcinwe kwiswekile. Ioksijini iyakhutshwa."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ls-g11-q1",
+        "question": "In which organelle does photosynthesis take place?",
+        "options": [
+          "Mitochondrion",
+          "Chloroplast",
+          "Nucleus",
+          "Ribosome"
+        ],
+        "answerIndex": 1,
+        "explanation": "Chloroplasts contain chlorophyll, which absorbs light energy for photosynthesis."
+      },
+      {
+        "id": "ls-g11-q2",
+        "question": "Which gas is released during photosynthesis?",
+        "options": [
+          "Nitrogen",
+          "Carbon dioxide",
+          "Hydrogen",
+          "Oxygen"
+        ],
+        "answerIndex": 3,
+        "explanation": "Oxygen is released when water molecules are split during the light-dependent reactions."
+      },
+      {
+        "id": "ls-g11-q3",
+        "question": "Which substance stores chemical energy produced by photosynthesis?",
+        "options": [
+          "Glucose",
+          "Oxygen",
+          "Water",
+          "Carbon dioxide"
+        ],
+        "answerIndex": 0,
+        "explanation": "Glucose stores chemical energy that plants can use in cellular respiration and other processes."
+      }
+    ]
+  },
+  {
+    "id": "ls-g12-genetics",
+    "grade": 12,
+    "subject": "life-sciences",
+    "title": "DNA and Inheritance",
+    "topic": "Genetics",
+    "language": "en",
+    "duration": 15,
+    "content": {
+      "intro": "Genetics is the study of inheritance and variation. DNA contains genetic instructions that influence the characteristics of organisms.",
+      "sections": [
+        {
+          "heading": "What is DNA?",
+          "text": "DNA stands for deoxyribonucleic acid. It carries genetic information and is organised into chromosomes in the nucleus of most human cells."
+        },
+        {
+          "heading": "Genes and alleles",
+          "text": "A gene is a section of DNA associated with a particular functional product or characteristic. Different forms of the same gene are called alleles."
+        },
+        {
+          "heading": "Genotype and phenotype",
+          "text": "Genotype refers to an organism's genetic makeup for a characteristic. Phenotype refers to the observable characteristics that result from genetic and environmental influences."
+        }
+      ],
+      "example": "In a simple Mendelian example, if B represents a dominant allele and b a recessive allele, an individual with genotype Bb shows the dominant phenotype, assuming complete dominance.",
+      "summary": "DNA carries genetic information. Genes have different alleles, and inherited genetic combinations contribute to an organism's phenotype."
+    },
+    "translations": {
+      "xh": {
+        "title": "I-DNA noLifa",
+        "intro": "I-Genetics sisifundo selifa nokwahluka. I-DNA iqulethe imiyalelo yemfuza echaphazela iimpawu zezinto eziphilayo.",
+        "summary": "I-DNA ithwala ulwazi lwemfuza. Iijini zineendlela ezahlukeneyo ezibizwa ngokuba zii-alleles, nezinegalelo kwiimpawu zezinto eziphilayo."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ls-g12-q1",
+        "question": "What does DNA stand for?",
+        "options": [
+          "Deoxyribonucleic acid",
+          "Dynamic nitrogen acid",
+          "Double nuclear arrangement",
+          "Deoxygenated nucleic atom"
+        ],
+        "answerIndex": 0,
+        "explanation": "DNA stands for deoxyribonucleic acid."
+      },
+      {
+        "id": "ls-g12-q2",
+        "question": "What is an allele?",
+        "options": [
+          "A type of cell membrane",
+          "A different form of a gene",
+          "An entire organ",
+          "A type of carbohydrate"
+        ],
+        "answerIndex": 1,
+        "explanation": "Alleles are different forms of the same gene."
+      },
+      {
+        "id": "ls-g12-q3",
+        "question": "What does phenotype mean?",
+        "options": [
+          "Only the DNA sequence",
+          "The number of chromosomes only",
+          "The observable characteristics of an organism",
+          "A type of cell division"
+        ],
+        "answerIndex": 2,
+        "explanation": "Phenotype refers to observable characteristics shaped by genetic and environmental influences."
+      }
+    ]
+  }
+]

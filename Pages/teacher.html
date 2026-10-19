@@ -1,0 +1,332 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#006b54">
+
+  <meta
+    name="description"
+    content="Teacher dashboard for reviewing Imfundo Quest learner progress and quiz results."
+  >
+
+  <title>Teacher Dashboard | Imfundo Quest</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="manifest" href="../manifest.json">
+
+  <script src="/js/storage.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/teacher.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Imfundo Quest home">
+      <span class="brand-mark" aria-hidden="true">IQ</span>
+
+      <span>
+        Imfundo Quest
+        <small>Learn. Practise. Grow.</small>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="learner.html">Learner</a>
+      <a href="lessons.html">Lessons</a>
+      <a class="active" href="teacher.html" aria-current="page">Teacher</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Page introduction -->
+    <section class="section" aria-labelledby="teacher-title">
+      <p class="eyebrow">EDUCATOR SPACE</p>
+
+      <h1 id="teacher-title">Teacher dashboard</h1>
+
+      <p>
+        Review recorded learning activity, monitor quiz performance and
+        export reports to support classroom planning.
+      </p>
+    </section>
+
+    <!-- Privacy notice -->
+    <aside class="teacher-notice" aria-label="Important information">
+      <strong>Prototype data notice</strong>
+
+      <p>
+        This dashboard displays progress saved in this browser and any
+        reports imported by a teacher. It does not automatically collect
+        data from other learners' devices.
+      </p>
+    </aside>
+
+    <!-- Overview statistics -->
+    <section class="section" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">AT A GLANCE</p>
+          <h2 id="overview-title">Learning overview</h2>
+        </div>
+
+        <button
+          class="button button-light"
+          id="refresh-report"
+          type="button"
+        >
+          Refresh report
+        </button>
+      </div>
+
+      <div class="teacher-stats">
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">👩‍🎓</span>
+          <p>Learner records</p>
+          <strong id="teacher-learner-count">0</strong>
+          <small>Distinct learner profiles represented</small>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">📚</span>
+          <p>Activities completed</p>
+          <strong id="teacher-completion-count">0</strong>
+          <small>Recorded lesson or quiz completions</small>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">⭐</span>
+          <p>Total XP earned</p>
+          <strong id="teacher-total-xp">0</strong>
+          <small>Experience points in recorded activity</small>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">🎯</span>
+          <p>Average quiz score</p>
+          <strong id="teacher-average-score">—</strong>
+          <small>Average across available quiz results</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Report actions -->
+    <section class="section" aria-labelledby="reports-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">REPORT MANAGEMENT</p>
+          <h2 id="reports-title">Import and export reports</h2>
+        </div>
+      </div>
+
+      <div class="report-actions">
+
+        <article class="report-card">
+          <span class="report-icon" aria-hidden="true">⬇</span>
+
+          <h3>Export CSV report</h3>
+
+          <p>
+            Download a spreadsheet-friendly report that can be opened
+            in Excel or another spreadsheet application.
+          </p>
+
+          <button
+            class="button button-primary"
+            id="export-csv"
+            type="button"
+          >
+            Export CSV
+          </button>
+        </article>
+
+        <article class="report-card">
+          <span class="report-icon" aria-hidden="true">📄</span>
+
+          <h3>Export JSON backup</h3>
+
+          <p>
+            Download a JSON file containing recorded activity for
+            backup or transfer to another browser.
+          </p>
+
+          <button
+            class="button button-primary"
+            id="export-json"
+            type="button"
+          >
+            Export JSON
+          </button>
+        </article>
+
+        <article class="report-card">
+          <span class="report-icon" aria-hidden="true">⬆</span>
+
+          <h3>Import a report</h3>
+
+          <p>
+            Load a previously exported JSON report into this dashboard.
+            Check the file before importing it.
+          </p>
+
+          <label class="file-label" for="import-report">
+            Choose JSON file
+          </label>
+
+          <input
+            type="file"
+            id="import-report"
+            accept=".json,application/json"
+          >
+
+          <button
+            class="button button-light"
+            id="import-json"
+            type="button"
+          >
+            Import selected file
+          </button>
+        </article>
+
+      </div>
+
+      <p
+        id="report-message"
+        class="form-message"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </section>
+
+    <!-- Search and filter records -->
+    <section class="section" aria-labelledby="search-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND LEARNING RECORDS</p>
+          <h2 id="search-title">Search reports</h2>
+        </div>
+      </div>
+
+      <form id="teacher-search-form" class="teacher-search">
+        <div class="form-group">
+          <label for="report-search">Search records</label>
+
+          <input
+            type="search"
+            id="report-search"
+            name="search"
+            placeholder="Search learner, subject or lesson"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="filter-grade">Filter by grade</label>
+
+          <select id="filter-grade" name="grade">
+            <option value="">All grades</option>
+            <option value="10">Grade 10</option>
+            <option value="11">Grade 11</option>
+            <option value="12">Grade 12</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filter-subject">Filter by subject</label>
+
+          <select id="filter-subject" name="subject">
+            <option value="">All subjects</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="physical-sciences">Physical Sciences</option>
+            <option value="life-sciences">Life Sciences</option>
+          </select>
+        </div>
+
+        <button class="button button-primary" type="submit">
+          Apply filters
+        </button>
+
+        <button class="button button-light" id="clear-filters" type="button">
+          Clear filters
+        </button>
+      </form>
+    </section>
+
+    <!-- Learner activity table -->
+    <section class="section" aria-labelledby="records-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LEARNING HISTORY</p>
+          <h2 id="records-title">Learner activity records</h2>
+        </div>
+
+        <p id="record-count" aria-live="polite">
+          0 records
+        </p>
+      </div>
+
+      <div class="table-container">
+        <table class="teacher-table">
+          <caption>
+            Recorded learning activity and quiz results
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Learner</th>
+              <th scope="col">Grade</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Activity</th>
+              <th scope="col">Score</th>
+              <th scope="col">XP</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+
+          <tbody id="teacher-report-body">
+            <tr>
+              <td colspan="7">
+                No activity records available yet. Complete a lesson
+                or import a report to get started.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Teaching guidance -->
+    <section class="callout" aria-labelledby="guidance-title">
+      <div>
+        <p class="eyebrow">SUPPORT EVERY LEARNER</p>
+
+        <h2 id="guidance-title">Use progress to guide teaching.</h2>
+
+        <p>
+          Review quiz results to identify topics learners may need
+          to practise again. Use these records alongside classroom
+          observations, assessments and learner feedback.
+        </p>
+      </div>
+
+      <a class="button button-primary" href="lessons.html">
+        Review lessons
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Imfundo Quest · Learn. Practise. Grow.</p>
+
+    <p>
+      An independent educational prototype. Protect learner information
+      and only use reports for appropriate educational purposes.
+    </p>
+  </footer>
+</body>
+</html>

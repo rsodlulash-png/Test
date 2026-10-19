@@ -1,0 +1,266 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#006b54">
+
+  <meta
+    name="description"
+    content="Your personal Imfundo Quest learning dashboard."
+  >
+
+  <title>Learner Dashboard | Imfundo Quest</title>
+
+  <link rel="stylesheet" href="../style.css">
+
+  <link rel="manifest" href="../manifest.json">
+
+  <script src="/js/storage.js"></script>
+  <script src="/js/app.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="/index.html" aria-label="Imfundo Quest home">
+      <span class="brand-mark" aria-hidden="true">IQ</span>
+
+      <span>
+        Imfundo Quest
+        <small>Learn. Practise. Grow.</small>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a class="active" href="learner.html" aria-current="page">Learner</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="teacher.html">Teacher</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Welcome section -->
+    <section class="section" aria-labelledby="welcome-title">
+      <p class="eyebrow">YOUR PERSONAL LEARNING SPACE</p>
+
+      <h1 id="welcome-title">
+        Welcome back, learner!
+      </h1>
+
+      <p>
+        Every question you answer is a step towards your goals.
+        Choose your grade, explore a subject and keep learning.
+      </p>
+    </section>
+
+    <!-- Learner profile -->
+    <section class="learner-panel" aria-labelledby="profile-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">YOUR PROFILE</p>
+          <h2 id="profile-title">Set up your learning journey</h2>
+        </div>
+      </div>
+
+      <form id="learner-profile-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="learner-name">Your name</label>
+
+            <input
+              type="text"
+              id="learner-name"
+              name="learnerName"
+              placeholder="Enter your name"
+              autocomplete="given-name"
+              maxlength="60"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="learner-grade">Your grade</label>
+
+            <select id="learner-grade" name="grade" required>
+              <option value="">Choose your grade</option>
+              <option value="10">Grade 10</option>
+              <option value="11">Grade 11</option>
+              <option value="12">Grade 12</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="learner-language">Learning language</label>
+
+            <select id="learner-language" name="language" required>
+              <option value="en">English</option>
+              <option value="xh">isiXhosa</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="button button-primary" type="submit">
+          Save my profile
+        </button>
+
+        <p
+          id="profile-message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </section>
+
+    <!-- Progress dashboard -->
+    <section class="section" aria-labelledby="progress-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR ACHIEVEMENTS</p>
+          <h2 id="progress-title">Your learning progress</h2>
+        </div>
+
+        <p>
+          Keep practising to build your knowledge and earn experience points.
+        </p>
+      </div>
+
+      <div class="learner-stats">
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">⭐</span>
+          <p>Total XP</p>
+          <strong id="learner-xp">0</strong>
+          <small>Experience points earned</small>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">📚</span>
+          <p>Completed lessons</p>
+          <strong id="completed-lessons">0</strong>
+          <small>Learning activities completed</small>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true">🔥</span>
+          <p>Learning streak</p>
+          <strong id="learning-streak">0</strong>
+          <small>Consecutive active days</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Subjects -->
+    <section class="section" aria-labelledby="subjects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR SUBJECTS</p>
+          <h2 id="subjects-title">Choose a subject</h2>
+        </div>
+      </div>
+
+      <div class="subject-grid">
+        <article class="subject-card">
+          <div class="subject-symbol" aria-hidden="true">∑</div>
+
+          <p class="eyebrow">PROBLEM SOLVING</p>
+          <h3>Mathematics</h3>
+
+          <p>
+            Practise numbers, algebra, functions and mathematical reasoning.
+          </p>
+
+          <a href="lessons.html?subject=mathematics">
+            Start Mathematics →
+          </a>
+        </article>
+
+        <article class="subject-card physics-card">
+          <div class="subject-symbol" aria-hidden="true">⚡</div>
+
+          <p class="eyebrow">SCIENCE &amp; ENERGY</p>
+          <h3>Physical Sciences</h3>
+
+          <p>
+            Explore physics, chemistry, forces, motion and energy.
+          </p>
+
+          <a href="lessons.html?subject=physical-sciences">
+            Start Physical Sciences →
+          </a>
+        </article>
+
+        <article class="subject-card life-card">
+          <div class="subject-symbol" aria-hidden="true">❋</div>
+
+          <p class="eyebrow">LIFE &amp; NATURE</p>
+          <h3>Life Sciences</h3>
+
+          <p>
+            Learn about cells, organisms, ecosystems and the human body.
+          </p>
+
+          <a href="lessons.html?subject=life-sciences">
+            Start Life Sciences →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Recent activity -->
+    <section class="section" aria-labelledby="activity-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KEEP MOVING FORWARD</p>
+          <h2 id="activity-title">Recent learning activity</h2>
+        </div>
+
+        <a href="lessons.html">Explore all lessons →</a>
+      </div>
+
+      <div class="activity-panel">
+        <ul id="recent-activity" aria-live="polite">
+          <li>
+            <span class="activity-icon" aria-hidden="true">📖</span>
+
+            <div>
+              <strong>Your learning journey starts here</strong>
+              <p>Complete a lesson to see your activity here.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Learning encouragement -->
+    <section class="callout" aria-labelledby="motivation-title">
+      <div>
+        <p class="eyebrow">A REMINDER FOR YOU</p>
+
+        <h2 id="motivation-title">Progress, not perfection.</h2>
+
+        <p>
+          You do not need to understand everything in one day.
+          Ask questions, practise regularly and celebrate each improvement.
+        </p>
+      </div>
+
+      <a class="button button-primary" href="lessons.html">
+        Continue learning
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Imfundo Quest · Learn. Practise. Grow.</p>
+
+    <p>
+      An independent educational prototype designed to support
+      CAPS Students.
+    </p>
+  </footer>
+</body>
+</html>

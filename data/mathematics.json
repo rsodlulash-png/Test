@@ -1,0 +1,273 @@
+
+[
+  {
+    "id": "math10-algebra-001",
+    "grade": 10,
+    "subject": "mathematics",
+    "title": "Introduction to Algebra",
+    "topic": "Algebra",
+    "language": "en",
+    "duration": 10,
+    "content": {
+      "introduction": "Algebra uses letters and symbols to represent numbers. It helps us solve problems when we do not know the value of a number.",
+      "sections": [
+        {
+          "heading": "1. Understanding variables",
+          "text": "A variable is a letter that represents an unknown or changing number. Common variables include x, y and a.",
+          "example": "In x + 3 = 8, the letter x represents the unknown number."
+        },
+        {
+          "heading": "2. Solving a simple equation",
+          "text": "To find x in x + 3 = 8, subtract 3 from both sides. This gives x = 5.",
+          "example": "Check your answer: 5 + 3 = 8."
+        },
+        {
+          "heading": "3. Remember the rule",
+          "text": "Whatever operation you perform on one side of an equation, perform the same operation on the other side to keep the equation balanced."
+        }
+      ],
+      "summary": "A variable represents an unknown number. Use inverse operations to solve simple equations."
+    },
+    "translations": {
+      "xh": {
+        "title": "Intshayelelo kwi-Aljebra",
+        "introduction": "I-Aljebra isebenzisa oonobumba neempawu ukumela amanani. Isinceda ukusombulula iingxaki xa singalazi ixabiso lenani.",
+        "sections": [
+          {
+            "heading": "1. Ukuqonda izinto eziguquguqukayo",
+            "text": "Into eguquguqukayo ngunobumba omele inani elingaziwayo, njengo x okanye u y.",
+            "example": "Ku x + 3 = 8, u x umele inani esingalaziyo."
+          },
+          {
+            "heading": "2. Ukusombulula i-equation elula",
+            "text": "Ukuze ufumane u x ku x + 3 = 8, thabatha u 3 kumacala omabini. Ufumana u x = 5.",
+            "example": "Jonga impendulo yakho: 5 + 3 = 8."
+          },
+          {
+            "heading": "3. Khumbula umthetho",
+            "text": "Yenza umsebenzi ofanayo kumacala omabini e-equation ukuze ihlale ilinganisiwe."
+          }
+        ],
+        "summary": "Into eguquguqukayo imele inani elingaziwayo. Sebenzisa imisebenzi echaseneyo ukusombulula ii-equation ezilula."
+      }
+    },
+    "quiz": [
+      {
+        "id": "math10-q1",
+        "question": "Solve for x: x + 4 = 10.",
+        "options": [
+          "x = 4",
+          "x = 6",
+          "x = 10",
+          "x = 14"
+        ],
+        "answerIndex": 1,
+        "explanation": "Subtract 4 from both sides: x = 10 - 4 = 6."
+      },
+      {
+        "id": "math10-q2",
+        "question": "What is a variable in algebra?",
+        "options": [
+          "A number that is always zero",
+          "A letter representing a number",
+          "A mathematical symbol for addition only",
+          "An answer that cannot change"
+        ],
+        "answerIndex": 1,
+        "explanation": "A variable is a letter or symbol used to represent a number."
+      },
+      {
+        "id": "math10-q3",
+        "question": "Solve for y: y - 5 = 7.",
+        "options": [
+          "y = 2",
+          "y = 7",
+          "y = 12",
+          "y = 35"
+        ],
+        "answerIndex": 2,
+        "explanation": "Add 5 to both sides: y = 7 + 5 = 12."
+      }
+    ]
+  },
+  {
+    "id": "math11-functions-001",
+    "grade": 11,
+    "subject": "mathematics",
+    "title": "Understanding Functions",
+    "topic": "Functions",
+    "language": "en",
+    "duration": 12,
+    "content": {
+      "introduction": "A function is a mathematical relationship that assigns exactly one output to each allowed input.",
+      "sections": [
+        {
+          "heading": "1. Function notation",
+          "text": "The notation f(x) means the output of a function f for an input x. For example, if f(x) = 2x + 1, substitute the input value for x.",
+          "example": "If x = 3, then f(3) = 2(3) + 1 = 7."
+        },
+        {
+          "heading": "2. Finding function values",
+          "text": "To calculate a function value, replace every x in the rule with the given number and simplify.",
+          "example": "For f(x) = x² - 4, f(2) = 2² - 4 = 0."
+        },
+        {
+          "heading": "3. Domain and range",
+          "text": "The domain is the set of allowed input values. The range is the set of output values produced by those inputs."
+        }
+      ],
+      "summary": "Substitute input values into a function rule to calculate outputs. Understand the difference between domain and range."
+    },
+    "translations": {
+      "xh": {
+        "title": "Ukuqonda iiFankshini",
+        "introduction": "Ifankshini lubudlelwane bemathematika obunika isiphumo esinye kuphela kwigalelo ngalinye elivumelekileyo.",
+        "sections": [
+          {
+            "heading": "1. Indlela yokubhala ifankshini",
+            "text": "U f(x) uthetha isiphumo sefankshini xa igalelo lingu x. Ukuba f(x) = 2x + 1, faka inani elinikiweyo endaweni ka x.",
+            "example": "Xa x = 3, f(3) = 2(3) + 1 = 7."
+          },
+          {
+            "heading": "2. Ukufumana ixabiso lefankshini",
+            "text": "Faka inani elinikiweyo endaweni ka x uze wenze izibalo.",
+            "example": "Ku f(x) = x² - 4, f(2) = 2² - 4 = 0."
+          },
+          {
+            "heading": "3. I-domain ne-range",
+            "text": "I-domain luluhlu lwamagalelo avumelekileyo. I-range luluhlu lweziphumo ezifunyenweyo."
+          }
+        ],
+        "summary": "Faka amanani kumthetho wefankshini ukuze ufumane iziphumo. Qonda umahluko phakathi kwe-domain ne-range."
+      }
+    },
+    "quiz": [
+      {
+        "id": "math11-q1",
+        "question": "If f(x) = 2x + 1, what is f(4)?",
+        "options": [
+          "5",
+          "8",
+          "9",
+          "12"
+        ],
+        "answerIndex": 2,
+        "explanation": "Substitute x = 4: f(4) = 2(4) + 1 = 9."
+      },
+      {
+        "id": "math11-q2",
+        "question": "If g(x) = x², what is g(5)?",
+        "options": [
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "answerIndex": 3,
+        "explanation": "g(5) = 5² = 25."
+      },
+      {
+        "id": "math11-q3",
+        "question": "What does the domain of a function describe?",
+        "options": [
+          "The allowed input values",
+          "Only the largest output",
+          "The graph's colour",
+          "The function's title"
+        ],
+        "answerIndex": 0,
+        "explanation": "The domain is the set of input values for which the function is defined."
+      }
+    ]
+  },
+  {
+    "id": "math12-calculus-001",
+    "grade": 12,
+    "subject": "mathematics",
+    "title": "Introduction to Differential Calculus",
+    "topic": "Calculus",
+    "language": "en",
+    "duration": 15,
+    "content": {
+      "introduction": "Differential calculus studies how quickly a quantity changes. The derivative can describe the gradient of a curve at a point.",
+      "sections": [
+        {
+          "heading": "1. What is a derivative?",
+          "text": "The derivative measures the instantaneous rate of change of a function. On a graph, it represents the gradient of the tangent to the curve at a point."
+        },
+        {
+          "heading": "2. The power rule",
+          "text": "For a power function f(x) = xⁿ, the derivative is f'(x) = nxⁿ⁻¹. Multiply by the original exponent, then reduce the exponent by one.",
+          "example": "If f(x) = x³, then f'(x) = 3x²."
+        },
+        {
+          "heading": "3. A worked example",
+          "text": "Differentiate f(x) = 2x³ + 4x² - 5x + 7 term by term.",
+          "example": "f'(x) = 6x² + 8x - 5. The derivative of a constant is zero."
+        }
+      ],
+      "summary": "Use the power rule to differentiate polynomial terms. The derivative represents the gradient of a curve and the rate at which a function changes."
+    },
+    "translations": {
+      "xh": {
+        "title": "Intshayelelo kwi-Differential Calculus",
+        "introduction": "I-differential calculus ifunda indlela ubungakanani obutshintsha ngayo. I-derivative ingabonisa ithambeka legophe kwindawo ethile.",
+        "sections": [
+          {
+            "heading": "1. Yintoni i-derivative?",
+            "text": "I-derivative ilinganisa izinga lotshintsho lomsebenzi wemathematika. Kwigrafu, ibonisa ithambeka lomgca ochukumisa igophe kwindawo ethile."
+          },
+          {
+            "heading": "2. Umthetho we-power",
+            "text": "Kumsebenzi f(x) = xⁿ, i-derivative ngu f'(x) = nxⁿ⁻¹. Phindaphinda nge-exponent uze unciphise i-exponent ngesinye.",
+            "example": "Ukuba f(x) = x³, ngoko f'(x) = 3x²."
+          },
+          {
+            "heading": "3. Umzekelo osebenzayo",
+            "text": "Fumana i-derivative ka f(x) = 2x³ + 4x² - 5x + 7 ngokusebenza kwigama ngalinye.",
+            "example": "f'(x) = 6x² + 8x - 5. I-derivative yenani elisisigxina ngu zero."
+          }
+        ],
+        "summary": "Sebenzisa umthetho we-power ukufumana ii-derivative zee-polynomial. I-derivative ibonisa ithambeka legophe nezinga lotshintsho."
+      }
+    },
+    "quiz": [
+      {
+        "id": "math12-q1",
+        "question": "What is the derivative of f(x) = x²?",
+        "options": [
+          "x",
+          "2x",
+          "x³",
+          "2"
+        ],
+        "answerIndex": 1,
+        "explanation": "Using the power rule, the derivative of x² is 2x."
+      },
+      {
+        "id": "math12-q2",
+        "question": "Differentiate f(x) = 3x³.",
+        "options": [
+          "3x²",
+          "6x",
+          "9x²",
+          "9x³"
+        ],
+        "answerIndex": 2,
+        "explanation": "The power rule gives 3 × 3x² = 9x²."
+      },
+      {
+        "id": "math12-q3",
+        "question": "What is the derivative of a constant such as f(x) = 8?",
+        "options": [
+          "8",
+          "x",
+          "1",
+          "0"
+        ],
+        "answerIndex": 3,
+        "explanation": "A constant does not change as x changes, so its derivative is zero."
+      }
+    ]
+  }
+]

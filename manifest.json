@@ -1,0 +1,19 @@
+
+{
+  "id": "./",
+  "name": "Imfundo Quest - CAPS Learning",
+  "short_name": "Imfundo Quest",
+  "description": "An offline-friendly CAPS learning dashboard for Grades 10 to 12.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7f2",
+  "theme_color": "#075b3c",
+  "lang": "en-ZA",
+  "categories": [
+    "education",
+    "learning"
+  ],
+  "icons": []
+}

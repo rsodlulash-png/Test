@@ -1,0 +1,222 @@
+
+[
+  {
+    "id": "ps-g10-states-of-matter",
+    "grade": 10,
+    "subject": "physical-sciences",
+    "title": "States of Matter and the Particle Model",
+    "topic": "Matter and Materials",
+    "language": "en",
+    "duration": 10,
+    "content": {
+      "intro": "All matter is made of particles. The arrangement, movement and spacing of these particles help explain the properties of solids, liquids and gases.",
+      "sections": [
+        {
+          "heading": "Solids",
+          "text": "In a solid, particles are closely packed and vibrate around fixed positions. Solids usually have a definite shape and a definite volume."
+        },
+        {
+          "heading": "Liquids",
+          "text": "In a liquid, particles remain close together but can move past one another. A liquid has a definite volume but takes the shape of its container."
+        },
+        {
+          "heading": "Gases",
+          "text": "In a gas, particles are far apart and move rapidly in random directions. Gases do not have a fixed shape or volume and can be compressed."
+        }
+      ],
+      "example": "When ice melts, its particles gain energy and move more freely. The substance changes from a solid to a liquid.",
+      "summary": "The particle model explains matter through particle arrangement, movement and spacing. Heating can cause changes of state."
+    },
+    "translations": {
+      "xh": {
+        "title": "Iimeko Zento NeModeli Yamasuntswana",
+        "intro": "Yonke into yenziwe ngamasuntswana. Indlela amasuntswana acwangciswe ngayo, ashukuma ngayo nashiyana ngayo inceda ukuchaza iimpawu zezinto eziqinileyo, ezilulwelo nezeegesi.",
+        "summary": "Imodeli yamasuntswana ichaza izinto ngokujonga indlela amasuntswana acwangciswe ngayo, ashukuma ngayo nashiyana ngayo."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ps-g10-q1",
+        "question": "How do particles in a solid generally behave?",
+        "options": [
+          "They move freely and are far apart",
+          "They vibrate around fixed positions",
+          "They have no movement at all",
+          "They move only in straight lines"
+        ],
+        "answerIndex": 1,
+        "explanation": "Particles in a solid vibrate around fixed positions, even though they do not move freely from place to place."
+      },
+      {
+        "id": "ps-g10-q2",
+        "question": "Which state of matter is generally easiest to compress?",
+        "options": [
+          "Solid",
+          "Liquid",
+          "Gas",
+          "All states equally"
+        ],
+        "answerIndex": 2,
+        "explanation": "Gas particles are far apart, so they can be pushed closer together."
+      },
+      {
+        "id": "ps-g10-q3",
+        "question": "What change of state occurs when a liquid becomes a gas?",
+        "options": [
+          "Freezing",
+          "Condensation",
+          "Melting",
+          "Vaporisation"
+        ],
+        "answerIndex": 3,
+        "explanation": "Vaporisation is the change from a liquid to a gas."
+      }
+    ]
+  },
+  {
+    "id": "ps-g11-forces",
+    "grade": 11,
+    "subject": "physical-sciences",
+    "title": "Forces and Newton's Laws",
+    "topic": "Mechanics",
+    "language": "en",
+    "duration": 12,
+    "content": {
+      "intro": "A force is an interaction that can change an object's motion or shape. Newton's laws describe how forces affect motion.",
+      "sections": [
+        {
+          "heading": "Newton's First Law",
+          "text": "An object remains at rest or continues moving at constant velocity in a straight line unless a non-zero resultant external force acts on it."
+        },
+        {
+          "heading": "Newton's Second Law",
+          "text": "The resultant force on an object equals its mass multiplied by its acceleration: Fnet = ma. Force is measured in newtons, mass in kilograms and acceleration in metres per second squared."
+        },
+        {
+          "heading": "Newton's Third Law",
+          "text": "When object A exerts a force on object B, object B simultaneously exerts a force of equal magnitude and opposite direction on object A. These forces act on different objects."
+        }
+      ],
+      "example": "A 2 kg object accelerates at 3 m/s². Its resultant force is F = ma = 2 × 3 = 6 N.",
+      "summary": "Newton's laws explain inertia, the relationship between resultant force and acceleration, and action-reaction force pairs."
+    },
+    "translations": {
+      "xh": {
+        "title": "Amandla Nemithetho kaNewton",
+        "intro": "Amandla yintsebenziswano enokutshintsha intshukumo okanye imilo yento. Imithetho kaNewton ichaza indlela amandla ayichaphazela ngayo intshukumo.",
+        "summary": "Imithetho kaNewton ichaza inertia, unxulumano phakathi kwamandla nesantya sokutshintsha kwesantya, kunye nezibini zamandla alinganayo nachaseneyo."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ps-g11-q1",
+        "question": "Which equation represents Newton's Second Law?",
+        "options": [
+          "Fnet = ma",
+          "v = d/t",
+          "W = mg only",
+          "P = W/t"
+        ],
+        "answerIndex": 0,
+        "explanation": "Newton's Second Law states that resultant force equals mass multiplied by acceleration."
+      },
+      {
+        "id": "ps-g11-q2",
+        "question": "What is the SI unit of force?",
+        "options": [
+          "Kilogram",
+          "Joule",
+          "Newton",
+          "Watt"
+        ],
+        "answerIndex": 2,
+        "explanation": "Force is measured in newtons (N)."
+      },
+      {
+        "id": "ps-g11-q3",
+        "question": "Action and reaction forces act on:",
+        "options": [
+          "The same object in the same direction",
+          "Different objects in opposite directions",
+          "Different objects in the same direction",
+          "Only objects at rest"
+        ],
+        "answerIndex": 1,
+        "explanation": "Newton's Third Law force pairs are equal in magnitude, opposite in direction and act on different objects."
+      }
+    ]
+  },
+  {
+    "id": "ps-g12-electricity",
+    "grade": 12,
+    "subject": "physical-sciences",
+    "title": "Electric Circuits and Ohm's Law",
+    "topic": "Electricity and Magnetism",
+    "language": "en",
+    "duration": 15,
+    "content": {
+      "intro": "Electric circuits allow electric charge to flow through connected components. Voltage, current and resistance describe important aspects of circuit behaviour.",
+      "sections": [
+        {
+          "heading": "Electric current",
+          "text": "Electric current is the rate of flow of electric charge. It is measured in amperes (A). Current can be calculated using I = Q/t, where Q is charge in coulombs and t is time in seconds."
+        },
+        {
+          "heading": "Potential difference and resistance",
+          "text": "Potential difference is the energy transferred per unit charge and is measured in volts (V). Resistance is measured in ohms (Ω) and describes how strongly a component opposes current."
+        },
+        {
+          "heading": "Ohm's Law",
+          "text": "For an ohmic conductor at constant temperature, the current through it is directly proportional to the potential difference across it. The relationship is V = IR."
+        }
+      ],
+      "example": "A resistor has a resistance of 4 Ω and a potential difference of 12 V across it. The current is I = V/R = 12/4 = 3 A.",
+      "summary": "Current is measured in amperes, potential difference in volts and resistance in ohms. Ohm's Law relates these quantities for an ohmic conductor under constant physical conditions."
+    },
+    "translations": {
+      "xh": {
+        "title": "Iisekethe Zombane noMthetho kaOhm",
+        "intro": "Iisekethe zombane zivumela intlawulo yombane ukuba ihambe kumacandelo aqhagamshelweyo. I-voltage, i-current kunye ne-resistance zichaza indlela isekethe esebenza ngayo.",
+        "summary": "I-current ilinganiswa ngee-amperes, i-voltage ngee-volts, ne-resistance ngee-ohms. UMthetho kaOhm udibanisa ezi zinto xa iimeko zifanelekile."
+      }
+    },
+    "quiz": [
+      {
+        "id": "ps-g12-q1",
+        "question": "Which equation represents Ohm's Law?",
+        "options": [
+          "P = F/A",
+          "V = IR",
+          "F = ma",
+          "E = mc²"
+        ],
+        "answerIndex": 1,
+        "explanation": "Ohm's Law is expressed as V = IR, where V is potential difference, I is current and R is resistance."
+      },
+      {
+        "id": "ps-g12-q2",
+        "question": "A 6 Ω resistor is connected across a 12 V supply. What current flows through it?",
+        "options": [
+          "0.5 A",
+          "18 A",
+          "72 A",
+          "2 A"
+        ],
+        "answerIndex": 3,
+        "explanation": "Using I = V/R, the current is 12/6 = 2 A."
+      },
+      {
+        "id": "ps-g12-q3",
+        "question": "What is the SI unit of electric current?",
+        "options": [
+          "Volt",
+          "Ohm",
+          "Ampere",
+          "Joule"
+        ],
+        "answerIndex": 2,
+        "explanation": "The SI unit of electric current is the ampere (A)."
+      }
+    ]
+  }
+]

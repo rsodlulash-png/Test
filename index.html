@@ -1,0 +1,243 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#006b54">
+
+  <meta
+    name="description"
+    content="Imfundo Quest is a CAPS learning platform helping Grade 10, 11 and 12 learners practise and grow."
+  >
+
+  <title>Imfundo Quest | Learn. Practise. Grow.</title>
+
+  <!-- Link the stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- App installation information -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- JavaScript files -->
+  <script src="/js/storage.js"></script>
+  <script src="/js/app.js"></script>
+</head>
+
+<body>
+  <!-- Website header and navigation -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Imfundo Quest home">
+      <span class="brand-mark" aria-hidden="true">IQ</span>
+
+      <span>
+        Imfundo Quest
+        <small>Learn. Practice. Grow.</small>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="/Pages/learner.html">Learner</a>
+      <a href="/Pages/lessons.html">Lessons</a>
+      <a href="/Pages/teacher.html">Teacher</a>
+    </nav>
+  </header>
+
+  <!-- Main homepage content -->
+  <main class="container">
+
+    <!-- Welcome section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">CAPS LEARNING · GRADES 10–12</p>
+
+        <h1 id="hero-title">
+          Your next big step starts with
+          <span>one small lesson.</span>
+        </h1>
+
+        <p>
+          Welcome to Imfundo Quest, a learning platform designed to help
+          South African high school learners practice, test their knowledge
+          and build confidence. Learn Mathematics, Physical Sciences and
+          Life Sciences through short lessons and quizzes.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="/Pages/learner.html">
+            Start learning <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="button button-light" href="/Pages/teacher.html">
+            Teacher dashboard
+          </a>
+        </div>
+
+        <p class="hero-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          Your progress is saved on this device.
+        </p>
+      </div>
+
+      <!-- Learning journey card -->
+      <aside class="hero-card" aria-label="Learning journey overview">
+        <div class="sun-icon" aria-hidden="true">✦</div>
+
+        <p class="eyebrow">YOUR LEARNING JOURNEY</p>
+
+        <h2>Small steps.<br>Real progress.</h2>
+
+        <div class="mini-stats">
+          <div>
+            <strong>3</strong>
+            <span>subjects</span>
+          </div>
+
+          <div>
+            <strong>10–12</strong>
+            <span>grades</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>possibilities</span>
+          </div>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <span style="width: 35%"></span>
+        </div>
+
+        <small>Every lesson is a chance to grow.</small>
+      </aside>
+    </section>
+
+    <!-- Subject selection -->
+    <section class="section" aria-labelledby="subjects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CHOOSE YOUR PATH</p>
+          <h2 id="subjects-title">What will you explore today?</h2>
+        </div>
+
+        <p>
+          Pick a subject and build confidence one quiz at a time.
+        </p>
+      </div>
+
+      <div class="subject-grid">
+
+        <!-- Mathematics -->
+        <article class="subject-card math-card">
+          <div class="subject-symbol" aria-hidden="true">∑</div>
+
+          <p class="eyebrow">LOGIC &amp; PROBLEM SOLVING</p>
+
+          <h3>Mathematics</h3>
+
+          <p>
+            Practise algebra, functions, patterns and problem-solving skills.
+          </p>
+
+          <a href="/Pages/lessons.html?subject=mathematics">
+            Explore Mathematics →
+          </a>
+        </article>
+
+        <!-- Physical Sciences -->
+        <article class="subject-card physics-card">
+          <div class="subject-symbol" aria-hidden="true">⚡</div>
+
+          <p class="eyebrow">HOW THE WORLD WORKS</p>
+
+          <h3>Physical Sciences</h3>
+
+          <p>
+            Discover forces, motion, energy, electricity and matter.
+          </p>
+
+          <a href="/Pages/lessons.html?subject=physical-sciences">
+            Explore Physical Sciences →
+          </a>
+        </article>
+
+        <!-- Life Sciences -->
+        <article class="subject-card life-card">
+          <div class="subject-symbol" aria-hidden="true">❋</div>
+
+          <p class="eyebrow">LIFE &amp; LIVING SYSTEMS</p>
+
+          <h3>Life Sciences</h3>
+
+          <p>
+            Explore cells, human biology, ecosystems and living organisms.
+          </p>
+
+          <a href="lessons.html?subject=life-sciences">
+            Explore Life Sciences →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Language and learning information -->
+    <section class="callout" aria-labelledby="language-title">
+      <div>
+        <p class="eyebrow">LEARNING FOR YOUR JOURNEY</p>
+
+        <h2 id="language-title">Learn in English or isiXhosa.</h2>
+
+        <p>
+          Choose your grade, practise at your own pace and return to your
+          lessons when you are ready. Imfundo Quest is designed with
+          learners in mind, including those who may have limited internet
+          access.
+        </p>
+      </div>
+
+      <a class="button button-primary" href="/Pages/learner.html">
+        Open my dashboard
+      </a>
+    </section>
+
+    <!-- About the platform -->
+    <section class="section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ABOUT IMFUNDO QUEST</p>
+          <h2 id="about-title">Education opens possibilities.</h2>
+        </div>
+      </div>
+
+      <p>
+        Imfundo Quest is a student learning platform created to make
+        practising school subjects more engaging and accessible. It uses
+        short learning activities, quizzes and saved progress to encourage
+        consistent learning.
+      </p>
+
+      <p>
+        The platform is intended to support CAPS learners, not replace
+        teachers, textbooks or the official curriculum. Lesson content
+        should be checked against current CAPS requirements by qualified
+        educators.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      Imfundo Quest · Learn. Practise. Grow.
+    </p>
+
+    <p>
+      An independent educational prototype and theme inspired by the spirit of
+      Nelson Mandela University.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#006b54">
+
+  <meta
+    name="description"
+    content="Explore CAPS lessons and practise Mathematics, Physical Sciences and Life Sciences with Imfundo Quest."
+  >
+
+  <title>Lessons | Imfundo Quest</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="manifest" href="../manifest.json">
+
+  <script src="/js/storage.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/lessons.js"></script>
+  <script src="/js/quizzes.js"></script>
+</head>
+
+<body>
+  <!-- Website header -->
+  <header class="site-header">
+    <a class="brand" href="/index.html" aria-label="Imfundo Quest home">
+      <span class="brand-mark" aria-hidden="true">IQ</span>
+
+      <span>
+        Imfundo Quest
+        <small>Learn. Practise. Grow.</small>
+      </span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="learner.html">Learner</a>
+      <a class="active" href="lessons.html" aria-current="page">Lessons</a>
+      <a href="teacher.html">Teacher</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Introduction -->
+    <section class="section" aria-labelledby="lessons-title">
+      <p class="eyebrow">YOUR KNOWLEDGE JOURNEY</p>
+
+      <h1 id="lessons-title">Explore your lessons</h1>
+
+      <p>
+        Choose your grade and subject, study a short lesson, and test
+        your understanding with a quiz. Every practice session helps
+        you build confidence.
+      </p>
+    </section>
+
+    <!-- Lesson filters -->
+    <section class="lesson-filter-panel" aria-labelledby="filter-title">
+      <div class="panel-heading">
+        <p class="eyebrow">MAKE IT YOURS</p>
+        <h2 id="filter-title">Find your next lesson</h2>
+      </div>
+
+      <form id="lesson-filter-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="lesson-grade">Choose your grade</label>
+
+            <select id="lesson-grade" name="grade" required>
+              <option value="10">Grade 10</option>
+              <option value="11">Grade 11</option>
+              <option value="12">Grade 12</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="lesson-subject">Choose a subject</label>
+
+            <select id="lesson-subject" name="subject">
+              <option value="all">All subjects</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="life-sciences">Life Sciences</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="lesson-language">Lesson language</label>
+
+            <select id="lesson-language" name="language">
+              <option value="en">English</option>
+              <option value="xh">isiXhosa</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="button button-primary" type="submit">
+          Find lessons
+        </button>
+
+        <p
+          id="lesson-filter-message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </section>
+
+    <!-- Lesson list -->
+    <section class="section" aria-labelledby="available-lessons-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">READY WHEN YOU ARE</p>
+          <h2 id="available-lessons-title">Available lessons</h2>
+        </div>
+
+        <p id="lesson-result-count" aria-live="polite">
+          Browse lessons for your grade.
+        </p>
+      </div>
+
+      <div id="lesson-list" class="lesson-grid">
+        <!-- JavaScript inserts lesson cards here. -->
+
+        <article class="lesson-card">
+          <div class="lesson-card-top">
+            <span class="lesson-badge">Start here</span>
+            <span aria-hidden="true">📘</span>
+          </div>
+
+          <h3>Your lessons will appear here</h3>
+
+          <p>
+            Select your grade and subject, then choose Find lessons
+            to explore available learning activities.
+          </p>
+        </article>
+      </div>
+
+      <p
+        id="lesson-loading-message"
+        class="form-message"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </section>
+
+    <!-- Lesson reader -->
+    <section
+      id="lesson-reader"
+      class="section lesson-reader"
+      aria-labelledby="lesson-reader-title"
+      hidden
+    >
+      <p class="eyebrow">YOUR STUDY SPACE</p>
+
+      <h2 id="lesson-reader-title">Lesson title</h2>
+
+      <p id="lesson-reader-meta" class="lesson-meta"></p>
+
+      <article class="lesson-content">
+        <div id="lesson-content-body">
+          <!-- The selected lesson content appears here. -->
+        </div>
+      </article>
+
+      <button
+        id="start-lesson-quiz"
+        class="button button-primary"
+        type="button"
+      >
+        Start quiz
+      </button>
+    </section>
+
+    <!-- Quiz section -->
+    <section
+      id="quiz-section"
+      class="section quiz-panel"
+      aria-labelledby="quiz-title"
+      hidden
+    >
+      <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+
+      <h2 id="quiz-title">Lesson quiz</h2>
+
+      <p id="quiz-progress">Question 1</p>
+
+      <form id="lesson-quiz-form">
+        <fieldset id="quiz-question">
+          <legend id="quiz-question-text">
+            Your question will appear here.
+          </legend>
+
+          <div id="quiz-options" class="quiz-options">
+            <!-- JavaScript inserts answer choices here. -->
+          </div>
+        </fieldset>
+
+        <p
+          id="quiz-feedback"
+          class="quiz-feedback"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <button
+          id="submit-quiz-answer"
+          class="button button-primary"
+          type="submit"
+        >
+          Check answer
+        </button>
+
+        <button
+          id="next-quiz-question"
+          class="button button-light"
+          type="button"
+          hidden
+        >
+          Next question
+        </button>
+      </form>
+
+      <div id="quiz-results" class="quiz-results" hidden>
+        <h3>Quiz complete!</h3>
+
+        <p id="quiz-score"></p>
+        <p id="quiz-xp"></p>
+
+        <button
+          id="retry-quiz"
+          class="button button-primary"
+          type="button"
+        >
+          Try again
+        </button>
+
+        <button
+          id="back-to-lessons"
+          class="button button-light"
+          type="button"
+        >
+          Back to lessons
+        </button>
+      </div>
+    </section>
+
+    <!-- Encouragement -->
+    <section class="callout" aria-labelledby="encouragement-title">
+      <div>
+        <p class="eyebrow">KEEP GOING</p>
+
+        <h2 id="encouragement-title">Every question is progress.</h2>
+
+        <p>
+          If you get an answer wrong, use it as an opportunity to learn.
+          Review the lesson and try again.
+        </p>
+      </div>
+
+      <a class="button button-primary" href="learner.html">
+        View my progress
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Imfundo Quest · Learn. Practise. Grow.</p>
+
+    <p>
+      An independent learning prototype designed to support
+      CAPS Students.
+    </p>
+  </footer>
+</body>
+</html>
